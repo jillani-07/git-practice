@@ -1,0 +1,14 @@
+name: First CI Pipeline
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Script
+        run: echo "GitHub Actions CI Running Successfully"
